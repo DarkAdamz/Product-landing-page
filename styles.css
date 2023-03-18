@@ -1,0 +1,538 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+}
+
+/* VARIABLES */
+:root{
+    --background-color1: rgb(216, 216, 216);
+    --background-color2: rgba(241, 241, 241, 0.966);
+    --background-color3: rgba(255, 153, 0, 0.904);
+}
+
+body{
+    background: var(--background-color2);
+    margin: auto;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* HEADER */
+.header-container{
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.9;
+    width: 1300px;
+    height: 25vh;
+    margin-bottom: 10px;
+    background: var(--background-color2);
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    height: 20vh;
+    margin: 5px;
+    padding: 10px;
+}
+
+#header-img{
+    margin: 15px;
+    padding: 1px;
+    width: 450px;
+    max-height: 200px;
+    height: 100px;
+}
+
+
+/* NAVBAR */
+#nav-bar{
+    margin-top:35px;
+}
+
+#nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav-bar ul li{
+    list-style: none;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 45px;
+}
+
+.nav-link:hover{
+    font-size: 1.4rem;
+    color: black;
+    background: rgba(128, 128, 128, 0.603);
+}
+
+/* CONTENT */
+.container{
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right:auto ;
+    width: 900px;
+}
+
+.heading{
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 2px;
+    margin: 5px 10px;
+}
+
+/* EMAIL ADDRESS */
+#form{
+    display: block;
+    width: 500px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+#email{
+    width: 300px;
+    margin-bottom: 15px;
+    padding: 12px;
+}
+
+/* BUTTONS */
+.btn{
+    font-weight: 800;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    background:var(--background-color3);
+}
+
+/* FEATURES */
+#Features{
+    display: grid;
+    grid-template-columns: 100px 2fr;
+    grid-gap:30px;
+}
+/* ICON */
+.icon{
+    width: 50px;
+    color: var(--background-color3);
+    margin: 50px;
+}
+
+.item-1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 5px;
+    margin: 10px;
+}
+
+.item-1 h2{
+    padding: 5px;
+    text-align: left;
+}
+
+.item-2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 5px;
+    margin: 10px;
+}
+
+.item-2 h2{
+    padding: 5px;
+    text-align: left;
+}
+
+.item-3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 5px;
+    margin: 10px;
+}
+
+.item-3 h2{
+    padding: 5px;
+    text-align: left;
+}
+
+/* HOW IT WORKS - YOUTUBE VIDEO */
+
+#How-it-work{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#video{
+    height: 350px;
+    width: 540px;
+    margin:20px;
+
+}
+
+/* PRICING */
+
+#Pricing{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-gap: 10px;
+}
+
+.trombone{
+    border: 1px solid #000;
+    height: 300px;
+}
+
+.trombone h2{
+    font-size: 14px;
+    height: 50px;
+    padding-top: 25px;
+    text-align: center;
+    background: var(--background-color1);
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   background: var(--background-color2);
+   height: 245px;
+   padding: 10px;
+}
+
+#Pricing h3{
+    text-align: center;
+    font-size: 21px;
+    padding: 5px;
+}
+
+#Pricing ul{
+    padding-left: 2px;
+}
+
+#Pricing ul li{
+    font-size: 19px;
+    text-align: center;
+    align-self: center;
+    list-style: none;
+    padding: 3px;
+    margin: auto;
+}
+
+#Pricing a{
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer{
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 20px;
+    margin-bottom: 0;
+    height: 70px;
+    background: var(--background-color1);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;   
+}
+
+footer li{
+    list-style: none;
+    padding: 7px;
+}
+
+footer a{
+    color: #000;
+    text-decoration: none;
+}
+
+footer p{
+    margin-bottom: 0;
+    padding: 5px; ;
+}
+
+/* TABLET SCREENS */
+
+@media (min-width:700px) and (max-width:1300px){
+    body{
+        width: 800px;
+    }
+
+    .header-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20vh;
+        margin: auto;
+    }
+
+    #header{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 200px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom:3px;
+    }
+
+    #header-img{
+        padding: 1px;
+        width: 350px;
+    }
+    
+    /* NAVBAR */
+#nav-bar{
+    margin-top:5px;
+    width: 450px;
+    margin: auto;
+}
+
+#nav-bar ul{
+    width: 450px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+
+#nav-bar ul li{
+    list-style: none;
+    padding: 5px;
+}
+
+.nav-link{
+    font-size: 1.1rem;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 25px;
+}
+
+.nav-link:hover{
+    width: 50px;
+    margin: auto;
+    font-size: 1.4rem;
+    color: black;
+    background:var(--background-color2);
+}
+.container{
+    width: 700px;
+    margin-top:300px;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+/* FEATURES */
+#Features{
+    display: grid;
+    grid-template-columns: 100px 500px;
+    grid-gap:30px;
+
+} 
+
+/* HOW IT WORKS - YOUTUBE VIDEO */
+
+#How-it-work{
+    margin: 30px;
+}
+
+#video{
+    margin:10px;
+}
+
+/* PRICING */
+
+#Pricing{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+.trombone{
+    border: 1px solid #000;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+.desc{
+   height: 230px;
+   padding: 10px;
+}
+footer{
+    width: 700px;
+    margin: auto;
+}
+
+}
+
+@media (max-width:500px){
+    body{
+        width: 350px;
+        overflow-x:unset;
+        
+    }
+    .header-container{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        height: 25vh;
+        top: 0;
+        margin-bottom: 1px;
+        margin-left: 0px;
+        
+    }
+
+    #header{
+        display:flex;
+        flex-direction: column;
+        justify-self: start;
+        align-items: center;
+        margin-left: 3px;
+    }
+
+    #header-img{
+        padding: 1px;
+        width: 250px;
+        height: 50px;
+    }
+    /* Nav-bar */
+    #nav-bar{
+
+        align-items: center;
+        margin-top:2px;
+        width: 300px;
+        margin: auto;
+    }
+    
+    #nav-bar ul{
+        width: 100%;
+        align-items:center;
+        justify-self: start;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+    }
+    
+    #nav-bar ul li{
+        font-size: 13px;
+        list-style: none;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    a.nav-link:last-child{
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+
+    .nav-link{
+        font-size: 1.1rem;
+        list-style: none;
+        text-decoration: none;
+        color: #000;
+        padding: 5px 25px;
+    }
+
+
+    
+    .nav-link:hover{
+        width: 50px;
+        margin: auto;
+        font-size: 1.4rem;
+        color: black;
+        background:var(--background-color2);
+    }
+    .container{
+        width: 200px;
+        margin-top: 200px;
+        margin-left: 3px;
+    }
+
+    
+.heading{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    text-align: justify;
+    padding: 2px;
+    margin:auto;
+}
+
+/* EMAIL ADDRESS */
+#form{
+    width: 100px;
+    text-align: left;
+    margin: 10px 3px;
+    padding: 5px;
+}
+
+#email{
+    width: 250px;
+    margin-bottom: 15px;
+    padding: 12px;
+}
+
+/* BUTTONS */
+.btn{
+    font-weight: 800;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 50px;
+    color: black;
+    background:var(--background-color3);
+}
+
+#How-it-work{
+    margin-left: 170px;
+}
+
+#video{
+    height: 200px;
+    width: 400px;
+}
+
+#Pricing{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-gap: 10px;
+    
+}
+
+footer{
+    width: 320px;
+}
+
+
+}
