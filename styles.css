@@ -481,6 +481,9 @@ footer{
         margin-left: 3px;
     }
 
+    .sub-head{
+        margin-left:55px ;
+    }
     
 .heading{
     font-size: 1.5rem;
@@ -527,11 +530,12 @@ footer{
     display: grid;
     grid-template-columns: 300px;
     grid-gap: 10px;
+    margin-left:   20px;
     
 }
 
 footer{
-    width: 320px;
+    width: 370px;
 }
 
 
